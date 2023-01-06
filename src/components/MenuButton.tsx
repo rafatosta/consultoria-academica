@@ -2,13 +2,10 @@ import { Menu, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 
+import { Link } from "react-router-dom";
+import { navigation } from "./Navbar";
+
 export function MenuButton() {
-  const links = [
-    { href: "/account-settings", label: "Account settings" },
-    { href: "/support", label: "Support" },
-    { href: "/license", label: "License" },
-    { href: "/sign-out", label: "Sign out" },
-  ];
   return (
     <Menu as="div" className="relative inline-block text-left">
       <div>
@@ -30,17 +27,18 @@ export function MenuButton() {
       >
         <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="px-1 py-1 ">
-            {links.map((link) => {
+            {navigation.map((link) => {
               return (
-                <Menu.Item key={link.label}>
+                <Menu.Item key={link.name}>
                   {({ active }) => (
-                    <button
+                    <Link
+                      to={link.href}
                       className={`${
                         active ? "bg-blue-400 text-white" : "text-gray-900"
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
                     >
-                      {link.label}
-                    </button>
+                      {link.name}
+                    </Link>
                   )}
                 </Menu.Item>
               );
