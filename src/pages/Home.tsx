@@ -35,6 +35,28 @@ function Home() {
 
       <div id="deadlines">
         <Title title="Prazos de entrega e a Taxa de urgência" />
+        <div className="flex flex-col justify-center gap-y-8 sm:flex-row sm:justify-start sm:gap-x-8">
+          <div>
+            <p className="inline-flex uppercase tracking-wide text-lg text-blue-700 font-bold items-center">
+              Revisão e formatação{" "}
+            </p>
+            <ul className="list-disc list-inside ml-4">
+              <li>Prazo de entrega: 5 dias;</li>
+              <li>Taxa de urgência: 10% sobre o valor final.</li>
+            </ul>
+          </div>
+          <div>
+            <p className="inline-flex uppercase tracking-wide text-lg text-blue-700 font-bold items-center">
+              Construção de trabalhos acadêmicos
+            </p>
+            <ul className="list-disc list-inside ml-4">
+              <li>Até 3 páginas: 3 dias.</li>
+              <li>Até 5 páginas: 4 dias.</li>
+              <li>Mais de 5 páginas: 5 dias.</li>
+              <li>Taxa de urgência: 20% do valor total.</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

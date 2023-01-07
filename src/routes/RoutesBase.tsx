@@ -15,7 +15,7 @@ export function RoutesBase() {
   return (
     <Routes>
       {routesNavigation.map((route) => {
-        return <Route path={route.path} element={route.component} />;
+        return <Route key={route.path} path={route.path} element={route.component} />;
       })}
     </Routes>
   );

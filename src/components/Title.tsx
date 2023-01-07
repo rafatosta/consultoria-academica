@@ -5,7 +5,7 @@ interface TitleProps {
 
 export default function Title(props: TitleProps) {
   return (
-    <div className="sm:text-center ">
+    <div className="sm:text-center p-8">
       <h1 className="text-center text-3xl font-semibold text-gray-800 lg:text-4xl">
         {props.title}
       </h1>
@@ -16,7 +16,7 @@ export default function Title(props: TitleProps) {
         <span className="inline-block h-1 w-1 rounded-full bg-blue-500"></span>
       </div>
 
-      <p className="mx-auto mt-6 max-w-2xl text-center text-gray-500">
+      <p className="mx-auto mt-6 max-w-2xl text-center text-gray-500 ">
         {props.caption}
       </p>
     </div>
