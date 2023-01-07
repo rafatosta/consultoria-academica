@@ -4,7 +4,7 @@ import { useLocation, Link } from "react-router-dom";
 export function Footer() {
   const location = useLocation();
   return (
-    <div className="flex flex-col w-full h-full justify-center items-center bg-blue-900 text-white pt-4 gap-y-2">
+    <div className="flex flex-col w-full h-full justify-center items-center bg-blue-900 text-white pt-4 gap-y-4">
       <div className="flex flex-col items-center gap-y-4 sm:flex-row sm:justify-around sm:items-center sm:w-full">
         <div id="menu" className="flex flex-col items-center gap-y-2 my-8">
           <p className="font-extrabold text-lg">Menu</p>
@@ -71,8 +71,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <span className="inline-block bg-gray-100/30 w-full h-[0.05rem]"></span>
-      <div className="flex flex-col justify-center items-center mb-2 sm:flex-row sm:w-full sm:justify-around sm:items-center sm:px-4">
+      <div id='developer' className="bg-gray-900/40 w-full flex flex-col justify-center items-center p-4 gap-2 sm:flex-row sm:w-full sm:justify-around sm:items-center sm:px-4">
         <a
           className="hover:font-bold"
           href="https://rafatosta.github.io/"
