@@ -15,9 +15,9 @@ function Services() {
           return (
             <div
               key={service.name}
-              className="max-w-lg mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
+              className="w-full mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl"
             >
-              <div className="md:flex flex-row items-center justify-center">
+              <div className="md:flex flex-row items-center justify-start">
                 <div className="p-8">
                   <div className="inline-flex uppercase tracking-wide text-lg text-blue-700 font-bold items-center">
                     <service.icon className="h-8 w-8 mr-4" />

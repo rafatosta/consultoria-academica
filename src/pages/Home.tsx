@@ -9,7 +9,7 @@ function Home() {
       <div
         id="header"
         className="flex flex-col justify-center items-center
-      sm:flex-row sm:items-start sm:justify-center w-full"
+      sm:flex-row sm:items-start sm:justify-evenly w-full"
       >
         <div className="flex flex-col items-center justify-center sm:items-start gap-y-9 h-72 ">
           <div className="flex flex-col items-center sm:items-start sm:justify-start text-2xl lg:text-4xl font-serif font-bold gap-y-2">
@@ -23,7 +23,7 @@ function Home() {
           </div>
         </div>
         <img
-          className="w-[32rem] h-60 md:w-[42rem] md:h-72 "
+          className="w-[20rem] h-60 md:w-[24rem] md:h-72 "
           src="src/assets/logo.png"
           alt="Image profile"
         />
