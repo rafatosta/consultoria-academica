@@ -34,7 +34,7 @@ function Home() {
       </div>
 
       <div id="deadlines">
-        <Title title="Prazos de entrega e a Taxa de urgência" />
+        <Title title="Prazos de entrega" />
         <div className="flex flex-col justify-center gap-y-8 sm:flex-row sm:justify-start sm:gap-x-8">
           <div>
             <p className="inline-flex uppercase tracking-wide text-lg text-blue-700 font-bold items-center">
