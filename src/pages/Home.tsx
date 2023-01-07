@@ -32,6 +32,10 @@ function Home() {
         <Title title="Serviços" />
         <div>Serviço 1</div>
       </div>
+
+      <div id="deadlines">
+        <Title title="Prazos de entrega e a Taxa de urgência" />
+      </div>
     </div>
   );
 }

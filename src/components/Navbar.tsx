@@ -1,29 +1,23 @@
 import { MenuButton } from "./MenuButton";
 import { useLocation, Link } from "react-router-dom";
-import { useEffect } from "react";
-
-export const navigation = [
-  { name: "Início", href: "/" },
-  { name: "Serviços", href: "/servicos" },
-  { name: "Contatos", href: "/contatos" },
-];
+import { routesNavigation } from "../routes/RoutesBase";
 
 export function Navbar() {
   const location = useLocation();
-  
+
   return (
     <div className="flex flex-row gap-x-8 justify-between w-full p-4">
       <Link to="/" className="font-bold">
         Consultoria Acadêmica{" "}
       </Link>
       <div className="sm:flex flex-1 hidden justify-start flex-row gap-x-8  ">
-        {navigation.map((item) => {
+        {routesNavigation.map((item) => {
           return (
             <Link
               key={item.name}
-              to={item.href}
+              to={item.path}
               className={
-                location.pathname == item.href ? "text-blue-500" : "text-black"
+                location.pathname == item.path ? "text-blue-500" : "text-black"
               }
             >
               {item.name}

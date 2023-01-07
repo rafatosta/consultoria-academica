@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import { Bars3Icon } from "@heroicons/react/20/solid";
 
 import { Link } from "react-router-dom";
-import { navigation } from "./Navbar";
+import { routesNavigation } from "../routes/RoutesBase";
 
 export function MenuButton() {
   return (
@@ -27,12 +27,12 @@ export function MenuButton() {
       >
         <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
           <div className="px-1 py-1 ">
-            {navigation.map((link) => {
+            {routesNavigation.map((link) => {
               return (
                 <Menu.Item key={link.name}>
                   {({ active }) => (
                     <Link
-                      to={link.href}
+                      to={link.path}
                       className={`${
                         active ? "bg-blue-400 text-white" : "text-gray-900"
                       } group flex w-full items-center rounded-md px-2 py-2 text-sm font-bold`}
