@@ -8,7 +8,7 @@ export const routesNavigation = [
   { name: "Início", path: "/", component: <Home /> },
   { name: "Serviços", path: "/servicos", component: <Services /> },
   { name: "Pagamentos", path: "/pagamentos", component: <Payments /> },
-  { name: "Contatos", path: "/contatos", component: <Contacts /> },
+  { name: "Orçamento", path: "/orcamento", component: <Contacts /> },
 ];
 
 export function RoutesBase() {
