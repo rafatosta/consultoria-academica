@@ -37,7 +37,7 @@ function Services() {
   );
 }
 
-const services = [
+export const services = [
   {
     name: "Orientação",
     description: (
@@ -55,6 +55,7 @@ const services = [
         cliente.
       </span>
     ),
+    summary: "Acompanhamento próximo e personalizado",
     icon: AcademicCapIcon,
   },
   {
@@ -66,6 +67,7 @@ const services = [
         plágio.
       </span>
     ),
+    summary: "Leitura rigorosa do seu texto",
     icon: MagnifyingGlassIcon,
   },
   {
@@ -75,6 +77,7 @@ const services = [
         Colocar nas normas determinadas pela faculdade, ABNT ou Vancouver.
       </span>
     ),
+    summary: "Formatação seguindo as normas",
     icon: CodeBracketIcon,
   },
   {
@@ -103,6 +106,7 @@ const services = [
         </ul>
       </span>
     ),
+    summary: "Construção da redação de dissertação e teses",
     icon: BookOpenIcon,
   },
 ];

@@ -1,4 +1,5 @@
 import Title from "../components/Title";
+import { services } from "../pages/Services";
 
 function Home() {
   return (
@@ -30,7 +31,24 @@ function Home() {
       </div>
       <div id="services">
         <Title title="Serviços" />
-        <div>Serviço 1</div>
+        <div className="flex flex-col justify-center items-start gap-y-4 sm:flex-row sm:gap-x-4">
+          {services.map((service) => {
+            return (
+              <div
+                key={service.name}
+                className="flex flex-row sm:flex-col sm:justify-center items-center sm:gap-y-4"
+              >
+                <service.icon className="h-20 w-20 p-4 bg-blue-700 text-white rounded-full" />
+                <div className="flex flex-col items-start justify-center pl-4 sm:items-center">
+                  <div className="uppercase tracking-wide text-lg text-blue-700 font-bold ">
+                    {service.name}
+                  </div>
+                  <div className="sm:text-center">{service.summary}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
       <div id="deadlines">
