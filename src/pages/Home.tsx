@@ -24,12 +24,7 @@ function Home() {
             A <span className="font-bold"> Consultoria Acadêmica</span> pode ser
             a solução!
           </div>
-          {/* <Link
-            to="/orcamento"
-            className="border rounded-full px-8 py-2 border-blue-500 shadow-md hover:scale-110 font-semibold"
-          >
-            Solicite um orçamento aqui...
-          </Link> */}
+          
           <Link
             to="/orcamento"
             className="inline-flex items-center text-blue-500 hover:scale-110 font-extrabold tracking-wide text-lg "

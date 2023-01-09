@@ -5,10 +5,11 @@ import {
   AcademicCapIcon,
   MagnifyingGlassIcon,
 } from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 function Services() {
   return (
-    <div>
+    <div className="flex flex-col justify-start items-center">
       <Title title="Descrição dos serviços" />
       <div id="services" className="flex flex-col gap-y-4 p-2">
         {services.map((service) => {
@@ -33,6 +34,13 @@ function Services() {
           );
         })}
       </div>
+
+      <Link
+        to="/orcamento"
+        className="justify-start items-center m-8 border rounded-full px-8 py-2 border-blue-500 shadow-md inline-flex  text-blue-500 hover:scale-110 font-extrabold tracking-wide text-lg sm:text-2xl"
+      >
+        Solicite um orçamento
+      </Link>
     </div>
   );
 }
