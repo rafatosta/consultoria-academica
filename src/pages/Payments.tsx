@@ -2,13 +2,13 @@ import Title from "../components/Title";
 
 function Payments() {
   return (
-    <div>
+    <div className="pb-28">
       <Title title="Formas de pagamento" />
       <div className="p-4">
         <div className="flex flex-col justify-center items-center gap-y-4 sm:flex-row sm:gap-x-8">
           <img
             className="w-[20rem] h-60 md:w-[24rem] md:h-72 "
-            src="src/assets/pagamento.png"
+            src="./pagamento.png"
             alt="Image profile"
           />
 

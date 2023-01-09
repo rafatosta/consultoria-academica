@@ -3,6 +3,7 @@ import { services } from "../pages/Services";
 import { Link } from "react-router-dom";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
+
 function Home() {
   return (
     <div
@@ -34,7 +35,7 @@ function Home() {
         </div>
         <img
           className="w-[20rem] h-60 mt-8 md:mt-0 md:w-[24rem] md:h-72 "
-          src="src/assets/logo.png"
+          src="./logo.png"
           alt="Image profile"
         />
       </div>
