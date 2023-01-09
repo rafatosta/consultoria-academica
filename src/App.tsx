@@ -11,11 +11,17 @@ function App() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+
   return (
-    <div className="flex flex-col w-full h-screen items-center justify-start">
-      <Navbar />
-      <RoutesBase />
-      <Footer />
+    <div className="w-full h-full bg-cover bg-center bg-[url('./WaveLine.svg')]">
+      <div
+        className="flex flex-col w-full h-screen items-center justify-start backdrop-blur-sm bg-white/30
+     "
+      >
+        <Navbar />
+        <RoutesBase />
+        <Footer />
+      </div>
     </div>
   );
 }

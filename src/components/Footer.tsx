@@ -16,7 +16,7 @@ export function Footer() {
                   to={item.path}
                   className={
                     location.pathname == item.path
-                      ? "text-white font-extrabold"
+                      ? "text-white font-extrabold underline"
                       : "text-gray-300"
                   }
                 >

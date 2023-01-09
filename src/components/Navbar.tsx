@@ -17,7 +17,7 @@ export function Navbar() {
               key={item.name}
               to={item.path}
               className={
-                location.pathname == item.path ? "text-blue-500" : "text-black"
+                location.pathname == item.path ? "text-blue-700 font-bold underline" : "text-black"
               }
             >
               {item.name}

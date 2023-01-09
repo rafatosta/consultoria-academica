@@ -21,20 +21,20 @@ function Home() {
             <p>Nada de orientador?</p>
             <p>Sem Tempo?</p>
           </div>
-          <div className="text-xl sm:text-2xl font-sans text-center">
+          <div className="text-xl font-sans text-center sm:text-2xl sm:text-start md:text-start">
             A <span className="font-bold"> Consultoria Acadêmica</span> pode ser
             a solução!
           </div>
           
           <Link
             to="/orcamento"
-            className="inline-flex items-center text-blue-500 hover:scale-110 font-extrabold tracking-wide text-lg "
+            className="inline-flex items-center text-blue-700 hover:scale-110 font-extrabold tracking-wide text-lg"
           >
             Solicite um orçamento <ArrowUpRightIcon className="h-4 w-4" />
           </Link>
         </div>
         <img
-          className="w-[20rem] h-60 mt-8 md:mt-0 md:w-[24rem] md:h-72 "
+          className="w-[20rem] h-60 mt-8 md:mt-0 md:w-[24rem] md:h-72 drop-shadow-xl"
           src="./logo.png"
           alt="Image profile"
         />
