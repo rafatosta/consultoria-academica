@@ -1,11 +1,12 @@
 import Title from "../components/Title";
 import { services } from "../pages/Services";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div
       className="flex flex-col justify-center items-center
-    w-full sm:py-8 gap-y-8 sm:gap-y-14 px-4"
+    w-full sm:py-8 gap-y-8 sm:gap-y-14 px-4 my-4"
     >
       <div
         id="header"
@@ -18,18 +19,24 @@ function Home() {
             <p>Nada de orientador?</p>
             <p>Sem Tempo?</p>
           </div>
-          <div className="text-xl sm:text-2xl font-sans">
+          <div className="text-xl sm:text-2xl font-sans text-center">
             A <span className="font-bold"> Consultoria Acadêmica</span> pode ser
             a solução!
           </div>
+          <Link
+            to="/orcamento"
+            className="border rounded-full px-8 py-2 border-blue-500 shadow-md hover:scale-110 font-semibold"
+          >
+            Solicite um orçamento aqui...
+          </Link>
         </div>
         <img
-          className="w-[20rem] h-60 md:w-[24rem] md:h-72 "
+          className="w-[20rem] h-60 mt-8 md:mt-0 md:w-[24rem] md:h-72 "
           src="src/assets/logo.png"
           alt="Image profile"
         />
       </div>
-      <div id="services">
+      <div id="services" className="flex flex-col items-center">
         <Title title="Serviços" />
         <div className="flex flex-col justify-center items-start gap-y-4 sm:flex-row sm:gap-x-4">
           {services.map((service) => {
@@ -49,6 +56,12 @@ function Home() {
             );
           })}
         </div>
+        <Link
+          to="/servicos"
+          className="mt-12 border rounded-full px-8 py-2 border-blue-500 shadow-md hover:scale-110 font-bold"
+        >
+          Saiba mais...
+        </Link>
       </div>
 
       <div id="deadlines">
