@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div className="w-full h-full bg-cover bg-center bg-[url('WaveLine.svg')]">
+    <div className="w-full h-full bg-cover bg-center bg-[url('../WaveLine.svg')]">
       <div
         className="flex flex-col w-full h-screen items-center justify-start backdrop-blur-sm bg-white/30
      "
