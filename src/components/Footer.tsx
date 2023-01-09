@@ -29,6 +29,7 @@ export function Footer() {
 
         <div id="contact" className="flex flex-col items-center gap-y-2">
           <p className="font-extrabold text-lg">Contatos</p>
+          <p>Amandha Queiroz</p>
           <p>Telefone: (xx) x xxxx-xxxx </p>
           <div className="flex gap-x-2 items-center ">
             {/* instagram */}
@@ -71,7 +72,10 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div id='developer' className="bg-gray-900/40 w-full flex flex-col justify-center items-center p-4 gap-2 sm:flex-row sm:w-full sm:justify-around sm:items-center sm:px-4">
+      <div
+        id="developer"
+        className="bg-gray-900/40 w-full flex flex-col justify-center items-center p-4 gap-2 sm:flex-row sm:w-full sm:justify-around sm:items-center sm:px-4"
+      >
         <a
           className="hover:font-bold"
           href="https://rafatosta.github.io/"

@@ -1,12 +1,13 @@
 import Title from "../components/Title";
 import { services } from "../pages/Services";
 import { Link } from "react-router-dom";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 function Home() {
   return (
     <div
       className="flex flex-col justify-center items-center
-    w-full sm:py-8 gap-y-8 sm:gap-y-14 px-4 my-4"
+    w-full sm:py-8 gap-y-8 sm:gap-y-14 px-4 my-4 mb-12"
     >
       <div
         id="header"
@@ -23,11 +24,17 @@ function Home() {
             A <span className="font-bold"> Consultoria Acadêmica</span> pode ser
             a solução!
           </div>
-          <Link
+          {/* <Link
             to="/orcamento"
             className="border rounded-full px-8 py-2 border-blue-500 shadow-md hover:scale-110 font-semibold"
           >
             Solicite um orçamento aqui...
+          </Link> */}
+          <Link
+            to="/orcamento"
+            className="inline-flex items-center text-blue-500 hover:scale-110 font-extrabold tracking-wide text-lg "
+          >
+            Solicite um orçamento <ArrowUpRightIcon className="h-4 w-4" />
           </Link>
         </div>
         <img
@@ -45,7 +52,7 @@ function Home() {
                 key={service.name}
                 className="flex flex-row sm:flex-col sm:justify-center items-center sm:gap-y-4"
               >
-                <service.icon className="h-20 w-20 p-4 bg-blue-700 text-white rounded-full" />
+                <service.icon className="h-20 w-20 p-5 bg-blue-700 text-white rounded-full shadow-lg" />
                 <div className="flex flex-col items-start justify-center pl-4 sm:items-center">
                   <div className="uppercase tracking-wide text-lg text-blue-700 font-bold ">
                     {service.name}
