@@ -76,7 +76,8 @@ export default function Home() {
           <Link
             href="https://api.whatsapp.com/send?phone=557592008266&text=Ol%C3%A1,%20podemos%20conversar?"
             target="_blank"
-            className="text-white bg-orange-600 hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8"
+            className="text-white bg-orange-600 hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8
+            drop-shadow-xl"
           >
             Enviar mensagem
           </Link>
