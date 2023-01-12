@@ -1,10 +1,12 @@
+import { instagramURL, whatsappURL } from "../data/info";
+
 export default function SocialMedia() {
   return (
     <div id="social-media" className="inline-flex items-center gap-x-2">
       {/* instagram */}
       <a
         className="mx-1.5 transform text-white transition-colors duration-300 hover:text-orange-500"
-        href="https://www.instagram.com/consultoriaacademica_aqueiroz/"
+        href={instagramURL}
         target="_blank"
       >
         <svg
@@ -22,7 +24,7 @@ export default function SocialMedia() {
       {/* Whatsapp */}
       <a
         className="mx-1.5 transform text-white transition-colors duration-300 hover:text-orange-500"
-        href="https://www.instagram.com/consultoriaacademica_aqueiroz/"
+        href={whatsappURL}
         target="_blank"
       >
         <svg

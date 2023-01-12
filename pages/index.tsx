@@ -3,6 +3,7 @@ import SocialMedia from "../components/SocialMedia";
 import Link from "next/link";
 import Image from "next/image";
 import avatar from "../public/avatar.jpg";
+import { whatsappURL } from "../data/info";
 export default function Home() {
   return (
     <>
@@ -18,7 +19,7 @@ export default function Home() {
           className="flex flex-col bg-[url('../public/banner.jpg')] bg-cover bg-center
           text-white"
         >
-          <div className="flex flex-col bg-black/50 p-4 sm:p-8 sm:px-24 gap-y-16 h-96">
+          <div className="flex flex-col bg-black/50 p-4 sm:p-8 sm:px-24 gap-y-16 h-[26rem] sm:h-[40rem]">
             {/* Cabeçalho */}
             <div id="header" className="flex flex-row justify-between">
               <div id="logo">
@@ -28,7 +29,7 @@ export default function Home() {
               <SocialMedia />
             </div>
             {/* Banner inicial */}
-            <div className="flex flex-col justify-center items-center gap-y-2 sm:items-start">
+            <div className="flex flex-col justify-center items-center gap-y-2 sm:items-start sm:h-full">
               <div className="text-center text-4xl tracking-wide font-extrabold sm:text-6xl">
                 Consultoria Acadêmica
               </div>
@@ -74,7 +75,7 @@ export default function Home() {
             </div>
           </div>
           <Link
-            href="https://api.whatsapp.com/send?phone=557592008266&text=Ol%C3%A1,%20podemos%20conversar?"
+            href={whatsappURL}
             target="_blank"
             className="text-white bg-orange-600 hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8
             drop-shadow-xl"
