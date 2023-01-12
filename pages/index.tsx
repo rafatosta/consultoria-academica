@@ -1,7 +1,8 @@
 import Head from "next/head";
 import SocialMedia from "../components/SocialMedia";
 import Link from "next/link";
-
+import Image from "next/image";
+import avatar from "../public/avatar.jpg";
 export default function Home() {
   return (
     <>
@@ -43,7 +44,46 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div id="servicos">LISTA DE SERVIÇOS</div>
+        <div
+          id="sobre"
+          className="bg-white flex flex-col justify-center items-center p-8"
+        >
+          <div className="flex flex-col justify-start items-center gap-y-8 sm:flex-row sm:justify-center sm:gap-x-12 ">
+            <Image
+              alt="Avatar logo"
+              src={avatar}
+              className="h-40 w-40 rounded-full sm:w-60 sm:h-60"
+            />
+            <div>
+              <p className="font-sans text-2xl font-extrabold">
+                Amandha Queiroz
+              </p>
+              <p className="uppercase font-mono text-sm text-orange-700">
+                Consultora acadêmica
+              </p>
+              <div className="pt-4">
+                <p>Falar um pouco da sua formacao...</p>
+                <p>
+                  Meu principal objetivo é prover um serviço de qualidade...
+                </p>
+                <p>
+                  Mais alguma coisa sobre a importância do serviço de
+                  consultoria...
+                </p>
+              </div>
+            </div>
+          </div>
+          <Link
+            href="https://api.whatsapp.com/send?phone=557592008266&text=Ol%C3%A1,%20podemos%20conversar?"
+            target="_blank"
+            className="text-white bg-orange-600 hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8"
+          >
+            Enviar mensagem
+          </Link>
+        </div>
+        <div id="servicos" className="bg-gray-100">
+          LISTA DE SERVIÇOS
+        </div>
       </main>
     </>
   );
