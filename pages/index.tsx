@@ -16,7 +16,7 @@ export default function Home() {
       <main className="w-full">
         <div
           id="inicio"
-          className="flex flex-col bg-[url('../public/banner.jpg')] bg-cover bg-center
+          className="flex flex-col bg-[url('../public/banner.png')] bg-cover bg-center
           text-white"
         >
           <div className="flex flex-col bg-black/50 p-4 sm:p-8 sm:px-24 gap-y-16 h-[26rem] sm:h-[40rem]">
