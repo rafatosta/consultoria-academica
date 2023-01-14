@@ -3,7 +3,10 @@ import SocialMedia from "../components/SocialMedia";
 import Link from "next/link";
 import Image from "next/image";
 import avatar from "../public/avatar.jpg";
-import { whatsappURL } from "../data/info";
+import { whatsappURL } from "../data/user";
+import services from "../data/services";
+import { Service } from "../components/Service";
+
 export default function Home() {
   return (
     <>
@@ -84,7 +87,17 @@ export default function Home() {
           </Link>
         </div>
         <div id="servicos" className="bg-gray-100">
-          LISTA DE SERVIÇOS
+          <div className="flex flex-row justify-around">
+            {services.map((s) => {
+              return (
+                <Service
+                  key={s.name}
+                  name={s.name}
+                  description={s.description}
+                />
+              );
+            })}
+          </div>
         </div>
       </main>
     </>

@@ -1,4 +1,4 @@
-import { instagramURL, whatsappURL } from "../data/info";
+import { instagramURL, whatsappURL } from "../data/user";
 
 export default function SocialMedia() {
   return (
