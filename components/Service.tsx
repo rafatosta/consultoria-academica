@@ -54,7 +54,7 @@ export function Service(props: ServiceProps) {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
-                <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                <Dialog.Panel className="w-full max-w-md sm:max-w-xl transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <Dialog.Title
                     as="h3"
                     className="font-sans text-2xl font-bold "
@@ -63,8 +63,8 @@ export function Service(props: ServiceProps) {
                     <div className="bg-blue-100 w-full h-[0.01rem]"></div>
                   </Dialog.Title>
 
-                  <div className="mt-4 text-sm sm:text-md md:text-lg text-gray-500 text-justify">
-                    <props.description />
+                  <div className="mt-4 text-sm sm:text-md md:text-lg text-gray-500 text-justify list-disc list-inside">
+                    <props.description  />
                   </div>
 
                   <div className="mt-4">
