@@ -41,7 +41,7 @@ export default function Home() {
               </div>
               <Link
                 href="/orcamento"
-                className="bg-orange-600 hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8"
+                className="bg-orange-600 hover:bg-orange-700 text-sm sm:text-md font-semibold p-3 rounded-md font-mono uppercase mt-8"
               >
                 Solicitar Orçamento
               </Link>
@@ -104,7 +104,10 @@ export default function Home() {
             })}
           </div>
         </div>
-        <div id="deadlines" className=" flex justify-center items-center p-8 py-16">
+        <div
+          id="deadlines"
+          className=" flex flex-col justify-center items-center p-8 py-16 gap-y-4"
+        >
           <div>
             <p className="font-sans text-xl sm:text-2xl font-extrabold">
               {" "}
@@ -141,6 +144,26 @@ export default function Home() {
                   <li>Transferência ou depósito bancário</li>
                 </ul>
               </div>
+            </div>
+          </div>
+          <Link
+                href="/orcamento"
+                className="bg-orange-600 text-white text-sm hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8"
+              >
+                Solicite seu orçamento
+              </Link>
+        </div>
+        <div
+          id="footer"
+          className="flex flex-col bg-black text-white justify-center items-center"
+        >
+          <div>
+            <div>
+              <p className="text-lg font-bold ">Amandha Queiroz</p>
+              <p className="text-sm font-mono text-gray-200">
+                Consultora acadêmica
+              </p>
+              <SocialMedia />
             </div>
           </div>
         </div>
