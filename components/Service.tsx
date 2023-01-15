@@ -1,6 +1,8 @@
 type ServiceProps = {
   name: string;
+  summary: string;
   description: React.FC;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 };
 
 import { Dialog, Transition } from "@headlessui/react";
@@ -19,15 +21,24 @@ export function Service(props: ServiceProps) {
 
   return (
     <>
-      <div className="inset-0 flex items-center justify-center">
-        <button
-          type="button"
-          onClick={openModal}
-          className="rounded-md bg-blue-700 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
-        >
-          {props.name}
-        </button>
-      </div>
+      {/* <div className="inset-0 flex items-center justify-center">
+        
+      </div> */}
+      <button type="button" onClick={openModal} className="w-full">
+        <div className="flex flex-row sm:flex-col sm:justify-center items-center sm:gap-y-4 border p-4 
+        rounded-lg bg-white/90 hover:bg-white shadow-lg active:bg-blue-100">
+          <props.icon className="h-20 w-20 p-5 bg-orange-700 text-white rounded-full shadow-lg" />
+          <div className="flex flex-col items-start justify-center pl-4 sm:items-center">
+            <div className="uppercase tracking-wide text-lg text-dark font-extrabold">
+              {props.name}
+            </div>
+            <div className="text-left sm:text-center text-sm">
+              {props.summary}
+            </div>
+            <div className="sm:mt-4 text-orange-700">Mais...</div>
+          </div>
+        </div>
+      </button>
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-10" onClose={closeModal}>
@@ -64,7 +75,7 @@ export function Service(props: ServiceProps) {
                   </Dialog.Title>
 
                   <div className="mt-4 text-sm sm:text-md md:text-lg text-gray-500 text-justify list-disc list-inside">
-                    <props.description  />
+                    <props.description />
                   </div>
 
                   <div className="mt-4">

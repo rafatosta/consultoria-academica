@@ -86,14 +86,16 @@ export default function Home() {
             Enviar mensagem
           </Link>
         </div>
-        <div id="servicos" className="bg-gray-100">
-          <div className="flex flex-row justify-around">
+        <div id="servicos" className="py-16 px-4 sm:px-24  bg-[url('../public/banner-white.jpg')] bg-cover bg-center ">
+          <div className="flex flex-col justify-center items-start gap-12 sm:flex-row">
             {services.map((s) => {
               return (
                 <Service
                   key={s.name}
                   name={s.name}
+                  summary={s.summary}
                   description={s.description}
+                  icon={s.icon}
                 />
               );
             })}
