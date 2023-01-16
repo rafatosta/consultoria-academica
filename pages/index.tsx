@@ -3,7 +3,7 @@ import SocialMedia from "../components/SocialMedia";
 import Link from "next/link";
 import Image from "next/image";
 import avatar from "../public/avatar.jpg";
-import { whatsappURL } from "../data/user";
+import { formOrcamentoURL, whatsappURL } from "../data/user";
 import services from "../data/services";
 import { Service } from "../components/Service";
 
@@ -40,7 +40,8 @@ export default function Home() {
                 Orientação, revisão, formatação e construção.
               </div>
               <Link
-                href="/orcamento"
+                href={formOrcamentoURL}
+                target="_blank"
                 className="bg-orange-600 hover:bg-orange-700 text-sm sm:text-md font-semibold p-3 rounded-md font-mono uppercase mt-8"
               >
                 Solicitar Orçamento
@@ -147,7 +148,8 @@ export default function Home() {
             </div>
           </div>
           <Link
-            href="/orcamento"
+            href={formOrcamentoURL}
+            target="_blank"
             className="bg-orange-600 hover:bg-orange-700 text-white text-sm sm:text-md font-semibold  p-3 rounded-md font-mono uppercase mt-8 drop-shadow-xl"
           >
             Solicite seu orçamento
