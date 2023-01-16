@@ -57,24 +57,25 @@ export default function Home() {
             <Image
               alt="Avatar logo"
               src={avatar}
-              className="h-52 w-52 sm:w-64 sm:h-64"
+              className="h-52 w-52 sm:w-72 sm:h-72"
             />
             <div className="flex flex-col justify-start items-center sm:items-start">
-              <p className="font-sans text-2xl font-extrabold">
+              <p className="font-sans text-2xl sm:text-4xl font-extrabold">
                 Amandha Queiroz
               </p>
               <p className="uppercase font-mono text-sm text-orange-700">
                 Consultora acadêmica
               </p>
-              <div className="pt-4">
-                <p>Falar um pouco da sua formacao...</p>
-                <p>
-                  Meu principal objetivo é prover um serviço de qualidade...
-                </p>
-                <p>
-                  Mais alguma coisa sobre a importância do serviço de
-                  consultoria...
-                </p>
+              <div className="flex flex-col pt-4 gap-y-8">
+                <div className="flex flex-col items-center sm:items-start sm:justify-start text-2xl lg:text-3xl font-serif  gap-y-1">
+                  <p>O TCC não está fluindo?</p>
+                  <p>Nada de orientador?</p>
+                  <p>Sem Tempo?</p>
+                </div>
+                <div className="text-xl font-sans text-center sm:text-2xl sm:text-start md:text-start">
+                  A <span className="font-bold"> Consultoria Acadêmica</span>{" "}
+                  pode ser a solução!
+                </div>
               </div>
               <Link
                 href={whatsappURL}
