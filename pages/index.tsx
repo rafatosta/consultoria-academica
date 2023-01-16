@@ -172,7 +172,7 @@ export default function Home() {
           <div className="bg-black w-full text-sm text-end p-1 px-8">
             <span className="text-white font-mono">desenvolvido por:</span>{" "}
             <a
-              href="https://github.com/rafatosta"
+              href="https://rafatosta.github.io/"
               target="_blank"
               className="text-white font-bold font-mono"
             >
