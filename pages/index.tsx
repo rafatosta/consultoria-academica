@@ -155,16 +155,26 @@ export default function Home() {
         </div>
         <div
           id="footer"
-          className="flex flex-col bg-black text-white justify-center items-center"
+          className="flex flex-col bg-black/70 text-white justify-center items-center"
         >
-          <div>
+          <div className="inline-flex justify-around items-center w-full p-4">
             <div>
               <p className="text-lg font-bold ">Amandha Queiroz</p>
               <p className="text-sm font-mono text-gray-200">
                 Consultora acadêmica
               </p>
-              <SocialMedia />
             </div>
+            <SocialMedia />
+          </div>
+          <div className="bg-black w-full text-sm text-end p-1 px-8">
+            <span className="text-white font-mono">desenvolvido por:</span>{" "}
+            <a
+              href="https://github.com/rafatosta"
+              target="_blank"
+              className="text-white font-bold font-mono"
+            >
+              Rafael Tosta
+            </a>
           </div>
         </div>
       </main>
