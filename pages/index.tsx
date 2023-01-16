@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             {/* Banner inicial */}
             <div className="flex flex-col justify-center items-center gap-y-2 sm:items-start sm:h-full">
-              <div className="text-center text-4xl tracking-wide font-extrabold sm:text-6xl">
+              <div className="text-center text-4xl tracking-wide font-extrabold sm:text-6xl sm:text-start">
                 Consultoria Acadêmica
               </div>
               <div className="text-center font-semibold sm:text-lg">
@@ -50,7 +50,7 @@ export default function Home() {
         </div>
         <div
           id="sobre"
-          className="bg-white flex flex-col justify-center items-center p-16"
+          className="bg-white flex flex-col justify-center items-center p-16 w-full"
         >
           <div className="flex flex-col justify-start items-center gap-y-8 sm:flex-row sm:justify-center sm:gap-x-12 ">
             <Image
@@ -58,7 +58,7 @@ export default function Home() {
               src={avatar}
               className="h-52 w-52 sm:w-64 sm:h-64"
             />
-            <div className="flex flex-col justify-start items-start">
+            <div className="flex flex-col justify-start items-center sm:items-start">
               <p className="font-sans text-2xl font-extrabold">
                 Amandha Queiroz
               </p>
@@ -78,7 +78,7 @@ export default function Home() {
               <Link
                 href={whatsappURL}
                 target="_blank"
-                className="text-white bg-orange-600 hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8
+                className="bg-orange-600 hover:bg-orange-700 text-sm sm:text-md font-semibold text-white p-3 rounded-md font-mono uppercase mt-8
             drop-shadow-xl"
               >
                 Enviar mensagem
@@ -109,7 +109,7 @@ export default function Home() {
           className=" flex flex-col justify-center items-center p-8 py-16 gap-y-4"
         >
           <div>
-            <p className="font-sans text-xl sm:text-2xl font-extrabold">
+            <p className="font-sans text-xl sm:text-2xl font-extrabold ">
               {" "}
               Solicitando meus serviços você terá:
             </p>
@@ -147,11 +147,11 @@ export default function Home() {
             </div>
           </div>
           <Link
-                href="/orcamento"
-                className="bg-orange-600 text-white text-sm hover:bg-orange-700 font-semibold p-3 rounded-md font-mono uppercase mt-8"
-              >
-                Solicite seu orçamento
-              </Link>
+            href="/orcamento"
+            className="bg-orange-600 hover:bg-orange-700 text-white text-sm sm:text-md font-semibold  p-3 rounded-md font-mono uppercase mt-8 drop-shadow-xl"
+          >
+            Solicite seu orçamento
+          </Link>
         </div>
         <div
           id="footer"
