@@ -172,7 +172,7 @@ export default function Home() {
           <div className="bg-black w-full text-sm text-end p-1 px-8">
             <span className="text-white font-mono">desenvolvido por:</span>{" "}
             <a
-              href="https://rafatosta.github.io/"
+              href="https://rtosta.vercel.app/"
               target="_blank"
               className="text-white font-bold font-mono"
             >
